@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Solem Avium</title>
 </head>
 <body>
@@ -30,21 +32,27 @@
         
         <div class="cImage">
             <img src="images/image_placeholder.png" alt="" />
-            <div class="cCaption">Caption1</div>
+            <div class="cCaption">Caption2</div>
         </div>
 
         <div class="cImage">
             <img src="images/image_placeholder.png" alt="" />
-            <div class="cCaption">Caption1</div>
+            <div class="cCaption">Caption3</div>
         </div>
 
         <div class="cImage">
             <img src="images/image_placeholder.png" alt="" />
-            <div class="cCaption">Caption1</div>
+            <div class="cCaption">Caption4</div>
         </div>
 
-        <a id="cPrev">&#10094;</a>
-        <a id="cNext">&#10095;</a>
+        <a id="cPrev" class="cArrow">&#10094;</a>
+        <a id="cNext" class="cArrow">&#10095;</a>
+        <div id="cProgress">
+            <span class="cBox"></span>
+            <span class="cBox"></span>
+            <span class="cBox"></span>
+            <span class="cBox"></span>
+        </div>
     </div>
 </body>
 </html>
