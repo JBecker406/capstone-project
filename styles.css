@@ -21,8 +21,14 @@ body {
     background-color: purple;
 }
 
+.sticky {
+    position: fixed;
+    top: 0px;
+}
+
 .mainNav ul a {
     display: block;
+    background-color: purple;
     text-decoration: none;
     text-align: center;
     line-height: 1.5em;
@@ -37,6 +43,7 @@ body {
 #carousel {
     width: 100%;
     max-width: 900px;
+    height: 20em;
     padding-top: 1.5em;
     position: relative;
     margin: auto;
@@ -49,7 +56,7 @@ body {
 
 .cImage img {
     width: 100%;
-    height: 200px;
+    height: 100%;
 }
 
 .cCaption {
@@ -65,7 +72,6 @@ body {
     top: 50%;
     font-size: 4em;
     cursor: pointer;
-    transition: 0.6s ease;
 }
 
 #cNext {
@@ -77,6 +83,7 @@ body {
 }
 
 #cProgress {
+    display: none;
     width: 100%;
     height: 5%;
     margin: auto;
@@ -108,11 +115,15 @@ body {
     
     .mainNav ul {
         display: none;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
     }
 
     .mainNav ul a {
         text-align: left;
         line-height: 2em;
+        width: 100%;
     }
 
     #navicon:hover+ul, .mainNav ul:hover {
@@ -132,7 +143,15 @@ body {
         flex: 1 1 auto;
         -webkit-flex: 1 1 auto;
     }
-    
+
+    .cArrow {
+        transition: background-color 0.6s ease;
+    }
+
+    #cProgress {
+        display: block;
+    }
+
 }
 
 @media screen and (min-width: 769px) {
