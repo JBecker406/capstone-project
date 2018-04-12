@@ -13,17 +13,21 @@ body {
 }
 
 #navicon img {
-    width: 40px;
+    width: 2.5em;
     display: none;
+}
+
+nav.sticky {
+    position: fixed;
+    top: 0px;
+    z-index: 100;
 }
 
 .mainNav {
     background-color: purple;
-}
-
-.sticky {
-    position: fixed;
-    top: 0px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1024px;
 }
 
 .mainNav ul a {
@@ -113,6 +117,10 @@ body {
         display: block;
     }
     
+    header.sticky + #carousel {
+        margin-top: 2.5em;
+    }
+    
     .mainNav ul {
         display: none;
         position: absolute;
@@ -132,6 +140,10 @@ body {
 }
 
 @media screen and (min-width: 481px) {
+    header.sticky + #carousel {
+        margin-top: 1.5em;
+    }
+
     .mainNav ul {
         display: flex;
         display: -webkit-flex;
