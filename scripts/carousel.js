@@ -1,6 +1,6 @@
 var slideIndex = 1;
 var slides = document.getElementsByClassName("cImage");
-var squares = document.getElementsByClassName("cBox");
+var squares = document.getElementsByClassName("cSun");
 showSlide();
 
 function rightArrow() {

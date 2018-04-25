@@ -1,7 +1,7 @@
 /* Main styles for pages */
 
 html {
-    background-color: red;
+    background-color: rgb(2, 164, 211);
 }
 
 body {
@@ -9,7 +9,11 @@ body {
     min-width: 320px;
     max-width: 1024px;
     margin: auto;
-    background-color: blue;
+    background-color: rgb(248, 213, 104);
+}
+
+#banner {
+    height: 12.5em;
 }
 
 #navicon img {
@@ -24,7 +28,6 @@ nav.sticky {
 }
 
 .mainNav {
-    background-color: purple;
     width: 100%;
     min-width: 320px;
     max-width: 1024px;
@@ -32,84 +35,10 @@ nav.sticky {
 
 .mainNav ul a {
     display: block;
-    background-color: purple;
     text-decoration: none;
     text-align: center;
-    line-height: 1.5em;
+    line-height: 2em;
     color: white;
-}
-
-.mainNav ul a:hover {
-    background-color: lightpink;
-    color: black;
-}
-
-#carousel {
-    width: 100%;
-    max-width: 900px;
-    height: 20em;
-    padding-top: 1.5em;
-    position: relative;
-    margin: auto;
-}
-
-.cImage {
-    width: 100%;
-    height: 100%;
-}
-
-.cImage img {
-    width: 100%;
-    height: 100%;
-}
-
-.cCaption {
-    position: absolute;
-    left: 20%;
-    top: 25%;
-    font-size: 1.4em;
-}
-
-.cArrow {
-    width: auto;
-    position: absolute;
-    top: 50%;
-    font-size: 4em;
-    cursor: pointer;
-}
-
-#cNext {
-    right: 0px;
-}
-
-.cArrow:hover {
-    background-color: greenyellow;
-}
-
-#cProgress {
-    display: none;
-    width: 100%;
-    height: 5%;
-    margin: auto;
-    text-align: center;
-    position: absolute;
-    bottom: 15px;
-}
-
-.cBox {
-    width: 15px;
-    height: 15px;
-    margin: 0px 5px;
-    display: inline-block;
-    text-align: center;
-    background-color: purple;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.cBox:hover {
-    width: 20px;
-    height: 20px;
 }
 
 @media screen and (max-width: 480px) {
@@ -121,6 +50,10 @@ nav.sticky {
         margin-top: 2.5em;
     }
     
+    .mainNav {
+        background-color: rgb(2, 164, 211);
+    }
+
     .mainNav ul {
         display: none;
         position: absolute;
@@ -132,6 +65,11 @@ nav.sticky {
         text-align: left;
         line-height: 2em;
         width: 100%;
+        background-color: rgb(2, 164, 211);
+    }
+
+    .mainNav ul a:hover {
+        background-color: rgb(2, 134, 207);
     }
 
     #navicon:hover+ul, .mainNav ul:hover {
@@ -141,7 +79,7 @@ nav.sticky {
 
 @media screen and (min-width: 481px) {
     header.sticky + #carousel {
-        margin-top: 1.5em;
+        margin-top: 2em;
     }
 
     .mainNav ul {
@@ -156,12 +94,12 @@ nav.sticky {
         -webkit-flex: 1 1 auto;
     }
 
-    .cArrow {
-        transition: background-color 0.6s ease;
+    .mainNav ul a {
+        background-color: rgba(65, 65, 65, 0.75);
     }
 
-    #cProgress {
-        display: block;
+    .mainNav ul a:hover {
+        background-color: rgba(55, 55, 55, 0.9);
     }
 
 }
