@@ -41,6 +41,21 @@ nav.sticky {
     color: white;
 }
 
+.submenu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.submenu li {
+    flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+}
+
+footer {
+    background-color: rgb(238, 184, 19);
+}
+
 @media screen and (max-width: 480px) {
     #navicon img {
         display: block;
@@ -68,11 +83,16 @@ nav.sticky {
         background-color: rgb(2, 164, 211);
     }
 
+    #currentPage {
+        background-color: rgb(29, 188, 234);
+        color: rgb(216, 216, 216);
+    }
+
     .mainNav ul a:hover {
         background-color: rgb(2, 134, 207);
     }
 
-    #navicon:hover+ul, .mainNav ul:hover {
+    #navicon:hover+ul, .mainNav>ul:hover {
         display: block;
     }
 }
@@ -82,14 +102,14 @@ nav.sticky {
         margin-top: 2em;
     }
 
-    .mainNav ul {
+    .mainNav>ul {
         display: flex;
         display: -webkit-flex;
         flex-flow: row nowrap;
         -webkit-flex-flow: row nowrap;
     }
     
-    .mainNav ul li {
+    .mainNav>ul>li {
         flex: 1 1 auto;
         -webkit-flex: 1 1 auto;
     }
@@ -98,8 +118,20 @@ nav.sticky {
         background-color: rgba(65, 65, 65, 0.75);
     }
 
+    #currentPage {
+        background-color: rgba(136, 136, 136, 0.75);
+        color: rgb(218, 218, 218)
+    }
+
     .mainNav ul a:hover {
         background-color: rgba(55, 55, 55, 0.9);
+    }
+
+    .submenuTitle:hover+.submenu, .submenu:hover {
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: column nowrap;
+        -webkit-flex-flow: column nowrap;
     }
 
 }
