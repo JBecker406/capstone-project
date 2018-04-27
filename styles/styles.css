@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre');
+
 /* Main styles for pages */
 
 html {
@@ -10,6 +12,7 @@ body {
     max-width: 1024px;
     margin: auto;
     background-color: rgb(248, 213, 104);
+    font-family: 'Frank Ruhl Libre', 'Times New Roman', Times, serif;
 }
 
 #banner {
@@ -39,17 +42,8 @@ nav.sticky {
     text-align: center;
     line-height: 2em;
     color: white;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    z-index: 1;
-}
-
-.submenu li {
-    flex: 1 1 auto;
-    -webkit-flex: 1 1 auto;
+    font-variant: small-caps;
+    letter-spacing: 0.2em;
 }
 
 footer {
@@ -74,11 +68,12 @@ footer {
         position: absolute;
         z-index: 1;
         width: 100%;
+        text-indent: 1em;
     }
 
     .mainNav ul a {
         text-align: left;
-        line-height: 2em;
+        line-height: 2.5em;
         width: 100%;
         background-color: rgb(2, 164, 211);
     }
@@ -93,6 +88,14 @@ footer {
     }
 
     #navicon:hover+ul, .mainNav>ul:hover {
+        display: block;
+    }
+
+    .submenu li {
+        text-indent: 2em;
+    }
+
+    .submenuTitle:hover+.submenu, .submenu:hover {
         display: block;
     }
 }
@@ -110,8 +113,8 @@ footer {
     }
     
     .mainNav>ul>li {
-        flex: 1 1 auto;
-        -webkit-flex: 1 1 auto;
+        flex: 1 1 0;
+        -webkit-flex: 1 1 0;
     }
 
     .mainNav ul a {
@@ -132,6 +135,16 @@ footer {
         display: -webkit-flex;
         flex-flow: column nowrap;
         -webkit-flex-flow: column nowrap;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .submenu li {
+        width: 240%;
     }
 
 }
