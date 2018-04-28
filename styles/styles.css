@@ -19,9 +19,16 @@ body {
     height: 12.5em;
 }
 
-#navicon img {
-    width: 2.5em;
+#navArrow {
+    width: 100%;
     display: none;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 0.35em;
+    color: white;
+    line-height: 2em;
 }
 
 nav.sticky {
@@ -46,24 +53,50 @@ nav.sticky {
     letter-spacing: 0.2em;
 }
 
+#returnBtn {
+    display: none;
+    font-size: 1.3em;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(2, 164, 211);
+    line-height: 1.6em;
+}
+
+#navArrow:hover, #returnBtn:hover {
+    background-color: rgb(2, 134, 207);
+}
+
+.submenuTitle {
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu li {
+    text-indent: 2em;
+}
+
 footer {
     background-color: rgb(238, 184, 19);
 }
 
 @media screen and (max-width: 480px) {
-    #navicon img {
+    #navArrow {
         display: block;
     }
     
     header.sticky + #carousel {
-        margin-top: 2.5em;
+        margin-top: 3em;
     }
     
     .mainNav {
         background-color: rgb(2, 164, 211);
     }
 
-    .mainNav ul {
+    #navMenu {
         display: none;
         position: absolute;
         z-index: 1;
@@ -87,15 +120,7 @@ footer {
         background-color: rgb(2, 134, 207);
     }
 
-    #navicon:hover+ul, .mainNav>ul:hover {
-        display: block;
-    }
-
-    .submenu li {
-        text-indent: 2em;
-    }
-
-    .submenuTitle:hover+.submenu, .submenu:hover {
+    #currentMenu {
         display: block;
     }
 }
@@ -143,8 +168,8 @@ footer {
         z-index: 1;
     }
     
-    .submenu li {
-        width: 240%;
+    .submenu li a {
+        width: 16em;
     }
 
 }
