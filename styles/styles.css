@@ -26,7 +26,7 @@ body {
     font-size: 1.5em;
     font-weight: bold;
     cursor: pointer;
-    padding-left: 0.35em;
+    text-indent: 0.35em;
     color: white;
     line-height: 2em;
 }
@@ -81,6 +81,20 @@ nav.sticky {
 
 footer {
     background-color: rgb(238, 184, 19);
+    display: -webkit-flex;
+    display: flex;
+}
+
+#twitterIcon {
+    background-color: rgb(121, 223, 255);
+    width: 17px;
+    height: 17px;
+}
+
+#fbIcon {
+    background-color: rgb(0, 40, 187);
+    width: 17px;
+    height: 17px;
 }
 
 @media screen and (max-width: 480px) {
@@ -138,8 +152,7 @@ footer {
     }
     
     .mainNav>ul>li {
-        flex: 1 1 0;
-        -webkit-flex: 1 1 0;
+        width: 25%;
     }
 
     .mainNav ul a {
@@ -163,15 +176,17 @@ footer {
     }
 
     .submenu {
+        max-width: 256px;
+        width: 25%;
         display: none;
         position: absolute;
         z-index: 1;
     }
-    
-    .submenu li a {
-        width: 16em;
-    }
 
+    footer {
+        flex-flow: row nowrap;
+        -webkit-flex-flow: row nowrap;
+    }
 }
 
 @media screen and (min-width: 769px) {

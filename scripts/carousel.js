@@ -3,6 +3,8 @@ var slides = document.getElementsByClassName("cImage");
 var suns = document.getElementsByClassName("cSun");
 showSlide();
 
+var slideTime = setInterval(function() {rightArrow()}, 4000);
+
 function rightArrow() {
     if (slideIndex === slides.length) {
         slideIndex = 1;
@@ -10,6 +12,7 @@ function rightArrow() {
         slideIndex += 1;
     }
     showSlide();
+    resetTimer();
 }
 
 function leftArrow() {
@@ -19,6 +22,7 @@ function leftArrow() {
         slideIndex -= 1;
     }
     showSlide();
+    resetTimer();
 }
 
 function showSlide() {
@@ -38,6 +42,7 @@ function sunSelect(e) {
     var sunNumber = selectedSun.id.slice(3);
     slideIndex = parseInt(sunNumber) + 1;
     showSlide();
+    resetTimer();
 }
 
 function addEventListeners() {
@@ -47,6 +52,11 @@ function addEventListeners() {
         suns[i].addEventListener("click", sunSelect);
         suns[i].setAttribute("id", "sun" + i);
     }
+}
+
+function resetTimer() {
+    clearInterval(slideTime);
+    slideTime = setInterval(function() {rightArrow()}, 4000);
 }
 
 window.addEventListener("load", addEventListeners);

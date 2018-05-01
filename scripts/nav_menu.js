@@ -6,9 +6,7 @@ var $returnBtn = $("#returnBtn");
 
 if ($(window).width() <= 480 ) {
     $(document).ready(function() {
-        $subTitles.each(function() {
-            $(this).on("click", openSubmenu);
-        });
+        $subTitles.on("click", openSubmenu);
     });
 } 
 
@@ -17,13 +15,9 @@ $returnBtn.on("click", closeSubmenu)
 
 $(window).resize(function() {
     if ($(window).width() <= 480 ) {
-        $subTitles.each(function() {
-            $(this).on("click", openSubmenu);
-        });
+        $subTitles.on("click", openSubmenu);
     } else {
-        $subTitles.each(function() {
-            $(this).off("click", openSubmenu);
-        });
+        $subTitles.off("click", openSubmenu);
         removeStyles();
     }
 });
