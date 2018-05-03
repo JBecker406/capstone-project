@@ -15,8 +15,26 @@ body {
     font-family: 'Frank Ruhl Libre', 'Times New Roman', Times, serif;
 }
 
-#banner {
-    height: 12.5em;
+#compName {
+    font-size: 4em;
+}
+
+#donate {
+    text-decoration: none;
+    display: block;
+    background-color: rgba(255, 168, 0, 0.60);
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+}
+
+#donate:hover {
+    background-color: rgb(255, 168, 0);
+    color: rgb(70, 70, 70);
 }
 
 #navArrow {
@@ -112,6 +130,31 @@ footer a {
 }
 
 @media screen and (max-width: 480px) {
+    #banner {
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        height: 15em;
+    }
+    
+    #logo {
+        width: 50%;
+        height: 75%;
+    }
+
+    #compName {
+        width: 50%;
+        height: 75%;
+    }
+
+    #donate {
+        margin-left: auto;
+        width: 5em;
+    }
+
     #navArrow {
         display: block;
     }
@@ -159,6 +202,34 @@ footer a {
 }
 
 @media screen and (min-width: 481px) {
+    #banner {
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: row nowrap;
+        -webkit-flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    #banner {
+        height: 12.5em;
+        width: 100%;
+    }
+    
+    #logo {
+        width: 13em;
+        height: 100%;
+    }
+    
+    #compName {
+        width: 60%;
+    }
+    
+    #donate {
+        align-self: flex-end;
+        font-size: 1em;
+        width: 4em;
+    }
+
     header.sticky + #carousel {
         margin-top: 2em;
     }
@@ -209,5 +280,11 @@ footer a {
 }
 
 @media screen and (min-width: 769px) {
+    #banner {
+        justify-content: space-between;
+    }
 
+    #donate {
+        font-size: 2em;
+    }
 }
