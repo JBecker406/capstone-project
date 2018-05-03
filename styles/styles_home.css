@@ -1,10 +1,26 @@
 #carousel {
     width: 100%;
     max-width: 900px;
-    height: 25em;
     padding-top: 1.5em;
     position: relative;
     margin: auto;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0.6}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: 0.6}
+    to {opacity: 1}
+}
+
+.cFade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 .cImage {
@@ -22,9 +38,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    top: 7.5%;
     text-align: center;
-    width: 50%;
     padding: 0.5em;
     font-size: 1.4em;
     background-color: rgba(65, 65, 65, 0.5);
@@ -92,10 +106,25 @@
 }
 
 @media screen and (max-width: 480px) {
+    #carousel {
+        height: 20em;
+    }
 
+    .cCaption {
+        bottom: 2%;
+    }
 }
 
 @media screen and (min-width: 481px) {
+    #carousel {
+        height: 25em;
+    }
+
+    .cCaption {
+        width: 50%;
+        top: 7.5%;
+    }
+
     .cArrow {
         transition: background-color 0.5s ease;
     }
