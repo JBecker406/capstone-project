@@ -15,13 +15,38 @@ body {
     font-family: 'Frank Ruhl Libre', 'Times New Roman', Times, serif;
 }
 
-#banner {
-    height: 12.5em;
+#compName {
+    font-size: 4em;
 }
 
-#navicon img {
-    width: 2.5em;
+#donate {
+    text-decoration: none;
+    display: block;
+    background-color: rgba(255, 168, 0, 0.60);
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+}
+
+#donate:hover {
+    background-color: rgb(255, 168, 0);
+    color: rgb(70, 70, 70);
+}
+
+#navArrow {
+    width: 100%;
     display: none;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    text-indent: 0.35em;
+    color: white;
+    line-height: 2em;
 }
 
 nav.sticky {
@@ -46,24 +71,103 @@ nav.sticky {
     letter-spacing: 0.2em;
 }
 
+#returnBtn {
+    display: none;
+    font-size: 1.3em;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(2, 164, 211);
+    line-height: 1.6em;
+}
+
+#navArrow:hover, #returnBtn:hover {
+    background-color: rgb(2, 134, 207);
+}
+
+.submenuTitle {
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu li {
+    text-indent: 2em;
+}
+
 footer {
     background-color: rgb(238, 184, 19);
+    display: -webkit-flex;
+    display: flex;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#footSocial ul {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.socialIcon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#twitterIcon {
+    background-color: rgb(121, 223, 255);
+}
+
+#fbIcon {
+    background-color: rgb(0, 40, 187);
+}
+
+#igIcon {
+    background-color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 480px) {
-    #navicon img {
+    #banner {
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        height: 15em;
+    }
+    
+    #logo {
+        width: 50%;
+        height: 75%;
+    }
+
+    #compName {
+        width: 50%;
+        height: 75%;
+    }
+
+    #donate {
+        margin-left: auto;
+        width: 5em;
+    }
+
+    #navArrow {
         display: block;
     }
     
     header.sticky + #carousel {
-        margin-top: 2.5em;
+        margin-top: 3em;
     }
     
     .mainNav {
         background-color: rgb(2, 164, 211);
     }
 
-    .mainNav ul {
+    #navMenu {
         display: none;
         position: absolute;
         z-index: 1;
@@ -87,20 +191,45 @@ footer {
         background-color: rgb(2, 134, 207);
     }
 
-    #navicon:hover+ul, .mainNav>ul:hover {
+    #currentMenu {
         display: block;
     }
 
-    .submenu li {
-        text-indent: 2em;
-    }
-
-    .submenuTitle:hover+.submenu, .submenu:hover {
-        display: block;
+    footer {
+        flex-flow: column nowrap;
+        -webkit-flex-flow: column nowrap;
     }
 }
 
 @media screen and (min-width: 481px) {
+    #banner {
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: row nowrap;
+        -webkit-flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    #banner {
+        height: 12.5em;
+        width: 100%;
+    }
+    
+    #logo {
+        width: 13em;
+        height: 100%;
+    }
+    
+    #compName {
+        width: 60%;
+    }
+    
+    #donate {
+        align-self: flex-end;
+        font-size: 1em;
+        width: 4em;
+    }
+
     header.sticky + #carousel {
         margin-top: 2em;
     }
@@ -113,8 +242,7 @@ footer {
     }
     
     .mainNav>ul>li {
-        flex: 1 1 0;
-        -webkit-flex: 1 1 0;
+        width: 25%;
     }
 
     .mainNav ul a {
@@ -138,17 +266,25 @@ footer {
     }
 
     .submenu {
+        max-width: 256px;
+        width: 25%;
         display: none;
         position: absolute;
         z-index: 1;
     }
-    
-    .submenu li {
-        width: 240%;
-    }
 
+    footer {
+        flex-flow: row nowrap;
+        -webkit-flex-flow: row nowrap;
+    }
 }
 
 @media screen and (min-width: 769px) {
+    #banner {
+        justify-content: space-between;
+    }
 
+    #donate {
+        font-size: 2em;
+    }
 }
