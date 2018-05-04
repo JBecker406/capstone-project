@@ -1,9 +1,11 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 
 /* Main styles for pages */
 
 html {
-    background-color: rgb(2, 164, 211);
+    background: linear-gradient(rgb(31, 151, 214),rgb(75, 228, 236));
 }
 
 body {
@@ -16,7 +18,9 @@ body {
 }
 
 #compName {
-    font-size: 4em;
+    box-sizing: border-box;
+    font-family: 'Berkshire Swash', "Brush Script MT", cursive;
+    padding-left: 0.25em;
 }
 
 #donate {
@@ -61,7 +65,7 @@ nav.sticky {
     max-width: 1024px;
 }
 
-.mainNav ul a {
+.mainNav ul a, .submenuTitle {
     display: block;
     text-decoration: none;
     text-align: center;
@@ -146,6 +150,7 @@ footer a {
     }
 
     #compName {
+        font-size: 3.25em;
         width: 50%;
         height: 75%;
     }
@@ -175,7 +180,7 @@ footer a {
         text-indent: 1em;
     }
 
-    .mainNav ul a {
+    .mainNav ul a, .submenuTitle {
         text-align: left;
         line-height: 2.5em;
         width: 100%;
@@ -187,7 +192,7 @@ footer a {
         color: rgb(216, 216, 216);
     }
 
-    .mainNav ul a:hover {
+    .mainNav ul a:hover, .submenuTitle:hover {
         background-color: rgb(2, 134, 207);
     }
 
@@ -222,6 +227,7 @@ footer a {
     
     #compName {
         width: 60%;
+        font-size: 4em;
     }
     
     #donate {
@@ -245,7 +251,7 @@ footer a {
         width: 25%;
     }
 
-    .mainNav ul a {
+    .mainNav ul a, .submenuTitle {
         background-color: rgba(65, 65, 65, 0.75);
     }
 
@@ -254,7 +260,7 @@ footer a {
         color: rgb(218, 218, 218)
     }
 
-    .mainNav ul a:hover {
+    .mainNav ul a:hover, .submenuTitle:hover {
         background-color: rgba(55, 55, 55, 0.9);
     }
 

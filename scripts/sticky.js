@@ -2,7 +2,15 @@ var navbar = document.getElementsByTagName("nav")[0];
 var header = document.getElementsByTagName("header")[0];
 var sticky = navbar.offsetTop;
 
-window.onscroll = function() {checkForStick()};
+$(window).resize(function() {
+        if ($(window).width() <= 480) {
+            sticky = 240;
+        } else {
+            sticky = 200;
+        }
+});
+
+window.onscroll = function() {checkForStick();};
 
 function checkForStick() {
     if (window.pageYOffset >= sticky) {
