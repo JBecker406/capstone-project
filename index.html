@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/styles_home.css" />
+    <script src="scripts/jquery-3.3.1.min.js"></script>
     <title>Solem Avium | Home</title>
 </head>
 
@@ -17,7 +18,7 @@
         <div id="banner">
             <img src="images/image_placeholder.png" alt="Solem Avium Logo" id="logo" />
             <h1 id="compName">Solem Avium</h1>
-            <a href="#" id="donate">Donate</a>
+            <a href="donate.html" id="donate">Donate</a>
         </div>
         <nav class="mainNav">
             <a id="navArrow">Open Menu &#62;</a>
@@ -28,74 +29,79 @@
                     <a href="about.html">Who we are</a>
                 </li>
                 <li>
-                    <span class="submenuTitle" href="#">Services</span>
+                    <span class="submenuTitle">Services</span>
                     <ul class="submenu">
-                        <li><a href="#">Residential</a></li>
-                        <li><a href="#">Commercial</a></li>
+                        <li><a href="services_res.html">Residential</a></li>
+                        <li><a href="services_com.html">Commercial</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div id="carousel">
-        <div class="cImage cFade">
             <img src="images/solar_install.jpg" alt="Workers installing solar panels" />
-            <div class="cCaption">Workers installing solar panels</div>
-        </div>
+    <main>
+        <div id="carousel">
+            <div class="cImage cFade">
+                <img src="images/solar_install.jpg" alt="Workers installing solar panels" />
+                <div class="cCaption">Workers installing solar panels</div>
+            </div>
+            
+            <div class="cImage cFade">
+                <img src="images/solar_residential.jpg" alt="Solar panels on a house rooftop" />
+                <div class="cCaption">Solar panels for homes</div>
+            </div>
 
-        <div class="cImage cFade">
-            <img src="images/solar_residential.jpg" alt="Solar panels on a house rooftop" />
-            <div class="cCaption">Solar panels for homes</div>
-        </div>
+            <div class="cImage cFade">
+                <img src="images/solar_business.jpg" alt="Skyscrapers in a city" />
+                <div class="cCaption">Solar panels for businesses</div>
+            </div>
 
-        <div class="cImage cFade">
-            <img src="images/solar_business.jpg" alt="Skyscrapers in a city" />
-            <div class="cCaption">Solar panels for businesses</div>
-        </div>
+            <div class="cImage cFade">
+                <img src="images/solar_word.jpg" alt="A hand holding a sign with the words 'solar energy'" />
+                <div class="cCaption">Solar panels provide a clean energy source</div>
+            </div>
 
-        <div class="cImage cFade">
-            <img src="images/solar_word.jpg" alt="A hand holding a sign with the words 'solar energy'" />
-            <div class="cCaption">Solar panels provide a clean energy source</div>
+            <a id="cPrev" class="cArrow">&#10094;</a>
+            <a id="cNext" class="cArrow">&#10095;</a>
+            <div id="cProgress">
+                <span class="cSun"></span>
+                <span class="cSun"></span>
+                <span class="cSun"></span>
+                <span class="cSun"></span>
+            </div>
         </div>
-
-        <a id="cPrev" class="cArrow">&#10094;</a>
-        <a id="cNext" class="cArrow">&#10095;</a>
-        <div id="cProgress">
-            <span class="cSun"></span>
-            <span class="cSun"></span>
-            <span class="cSun"></span>
-            <span class="cSun"></span>
-        </div>
-    </div>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at
-        atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit
-        dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam
-        praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque,
-        adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis
-        vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem.
-        Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis
-        molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere
-        autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque
-        reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore
-        commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium
-        hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci
-        quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis
-        vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem.
-        Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis
-        molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere
-        autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque
-        reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem.
-    </p>
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at
+                atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit
+                dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam
+                praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque,
+                adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis
+                vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem.
+                Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis
+                molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere
+                autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque
+                reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore
+                commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium
+                hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci
+                quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis
+                vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem.
+                Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis
+                molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere
+                autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque
+                reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem.
+            </p>
+        </article>
+    </main>
     <footer>
         <div id="footSocial">
             <h1>Social Media:</h1>
@@ -123,7 +129,6 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga at atque reprehenderit dolore commodi totam praesentium hic eaque, adipisci quam, perspiciatis vitae, delectus rem. Quidem perferendis molestias facere autem.
         </div>
     </footer>
-    <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/carousel.js"></script>
     <script src="scripts/sticky.js"></script>
     <script src="scripts/nav_menu.js"></script>

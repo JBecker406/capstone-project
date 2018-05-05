@@ -36,6 +36,11 @@ body {
     color: black;
 }
 
+#donate:not([href]), #donate:not([href]):hover {
+    background-color: rgba(145, 121, 73, 0.80);
+    color: rgb(176, 167, 167);
+}
+
 #donate:hover {
     background-color: rgb(255, 168, 0);
     color: rgb(70, 70, 70);
@@ -101,6 +106,15 @@ nav.sticky {
     text-indent: 2em;
 }
 
+main {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+article {
+    padding: 0 1em;
+}
+
 footer {
     background-color: rgb(238, 184, 19);
     display: -webkit-flex;
@@ -164,7 +178,7 @@ footer a {
         display: block;
     }
     
-    header.sticky + #carousel {
+    header.sticky + main {
         margin-top: 3em;
     }
     
@@ -236,7 +250,7 @@ footer a {
         width: 4em;
     }
 
-    header.sticky + #carousel {
+    header.sticky + main {
         margin-top: 2em;
     }
 

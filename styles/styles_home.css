@@ -2,8 +2,7 @@
 
 #carousel {
     width: 100%;
-    max-width: 900px;
-    padding-top: 1.5em;
+    max-width: 1024px;
     position: relative;
     margin: auto;
 }
