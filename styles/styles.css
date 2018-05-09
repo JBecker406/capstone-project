@@ -121,8 +121,18 @@ footer {
     display: flex;
 }
 
+footer h1 {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
 footer a {
     text-decoration: none;
+    color: rgb(87, 21, 217);
+}
+
+footer a:hover {
+    color: rgb(148, 113, 204);
 }
 
 #footSocial ul {
@@ -130,9 +140,13 @@ footer a {
     display: -webkit-flex;
 }
 
+#footSocial li {
+    margin: auto;
+}
+
 .socialIcon {
-    width: 1.5em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
 }
 
 #twitterIcon {
@@ -217,6 +231,16 @@ footer a {
     footer {
         flex-flow: column nowrap;
         -webkit-flex-flow: column nowrap;
+        line-height: 1.5em;
+    }
+
+    #footContact a {
+        display: block;
+        background-color: rgb(242, 198, 38);
+    }
+
+    #footContact a:hover {
+        background-color: rgb(237, 195, 42);
     }
 }
 
@@ -296,6 +320,14 @@ footer a {
     footer {
         flex-flow: row nowrap;
         -webkit-flex-flow: row nowrap;
+    }
+
+    #footSocial {
+        width: 33%;
+    }
+
+    #footContact {
+        width: 67%;
     }
 }
 
