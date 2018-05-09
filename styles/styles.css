@@ -5,7 +5,7 @@
 /* Main styles for pages */
 
 html {
-    background: linear-gradient(rgb(31, 151, 214),rgb(75, 228, 236));
+    background: linear-gradient(rgb(31, 151, 214), rgb(75, 228, 236));
 }
 
 body {
@@ -36,7 +36,8 @@ body {
     color: black;
 }
 
-#donate:not([href]), #donate:not([href]):hover {
+#donate:not([href]),
+#donate:not([href]):hover {
     background-color: rgba(145, 121, 73, 0.80);
     color: rgb(176, 167, 167);
 }
@@ -70,7 +71,8 @@ nav.sticky {
     max-width: 1024px;
 }
 
-.mainNav ul a, .submenuTitle {
+.mainNav ul a,
+.submenuTitle {
     display: block;
     text-decoration: none;
     text-align: center;
@@ -90,7 +92,8 @@ nav.sticky {
     line-height: 1.6em;
 }
 
-#navArrow:hover, #returnBtn:hover {
+#navArrow:hover,
+#returnBtn:hover {
     background-color: rgb(2, 134, 207);
 }
 
@@ -171,35 +174,28 @@ footer a:hover {
         align-items: center;
         height: 15em;
     }
-    
     #logo {
         width: 50%;
         height: 75%;
     }
-
     #compName {
         font-size: 3.25em;
         width: 50%;
         height: 75%;
     }
-
     #donate {
         margin-left: auto;
         width: 5em;
     }
-
     #navArrow {
         display: block;
     }
-    
-    header.sticky + main {
+    header.sticky+main {
         margin-top: 3em;
     }
-    
     .mainNav {
         background-color: rgb(2, 164, 211);
     }
-
     #navMenu {
         display: none;
         position: absolute;
@@ -207,27 +203,24 @@ footer a:hover {
         width: 100%;
         text-indent: 1em;
     }
-
-    .mainNav ul a, .submenuTitle {
+    .mainNav ul a,
+    .submenuTitle {
         text-align: left;
         line-height: 2.5em;
         width: 100%;
         background-color: rgb(2, 164, 211);
     }
-
     #currentPage {
         background-color: rgb(29, 188, 234);
         color: rgb(216, 216, 216);
     }
-
-    .mainNav ul a:hover, .submenuTitle:hover {
+    .mainNav ul a:hover,
+    .submenuTitle:hover {
         background-color: rgb(2, 134, 207);
     }
-
     #currentMenu {
         display: block;
     }
-
     footer {
         flex-flow: column nowrap;
         -webkit-flex-flow: column nowrap;
@@ -252,63 +245,54 @@ footer a:hover {
         -webkit-flex-flow: row nowrap;
         align-items: center;
     }
-
     #banner {
         height: 12.5em;
         width: 100%;
     }
-    
     #logo {
         width: 13em;
         height: 100%;
     }
-    
     #compName {
         width: 60%;
         font-size: 4em;
     }
-    
     #donate {
         align-self: flex-end;
         font-size: 1em;
         width: 4em;
     }
-
-    header.sticky + main {
+    header.sticky+main {
         margin-top: 2em;
     }
-
     .mainNav>ul {
         display: flex;
         display: -webkit-flex;
         flex-flow: row nowrap;
         -webkit-flex-flow: row nowrap;
     }
-    
     .mainNav>ul>li {
         width: 25%;
     }
-
-    .mainNav ul a, .submenuTitle {
+    .mainNav ul a,
+    .submenuTitle {
         background-color: rgba(65, 65, 65, 0.75);
     }
-
     #currentPage {
         background-color: rgba(136, 136, 136, 0.75);
         color: rgb(218, 218, 218)
     }
-
-    .mainNav ul a:hover, .submenuTitle:hover {
+    .mainNav ul a:hover,
+    .submenuTitle:hover {
         background-color: rgba(55, 55, 55, 0.9);
     }
-
-    .submenuTitle:hover+.submenu, .submenu:hover {
+    .submenuTitle:hover+.submenu,
+    .submenu:hover {
         display: flex;
         display: -webkit-flex;
         flex-flow: column nowrap;
         -webkit-flex-flow: column nowrap;
     }
-
     .submenu {
         max-width: 256px;
         width: 25%;
@@ -316,7 +300,6 @@ footer a:hover {
         position: absolute;
         z-index: 1;
     }
-
     footer {
         flex-flow: row nowrap;
         -webkit-flex-flow: row nowrap;
@@ -335,7 +318,6 @@ footer a:hover {
     #banner {
         justify-content: space-between;
     }
-
     #donate {
         font-size: 2em;
     }
