@@ -7,15 +7,13 @@ Date: 5.7.18
 about.css
 
 */
+
 main {
     margin: 10px 15px;
 }
+
 main h1 {
     font-size: 3em;
-}
-
-.container {
-
 }
 
 .migos {
@@ -38,5 +36,3 @@ main h1 {
     width: 33.3%;
     margin: 5px;
 }
-
-
