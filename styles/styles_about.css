@@ -18,21 +18,36 @@ main h1 {
 
 .migos {
     display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-evenly;
+    -webkit-justify-content: space-evenly;
 }
 
 .migos h2 {
     font-size: 2.2em;
     margin: 10px 15px;
-    text-align: center
+    text-align: center;
 }
 
 .migos img {
     height: 15em;
+    width: 15em;
     display: block;
     margin: 0 auto;
+    border-radius: 15em;
+    box-shadow: 0 0 25px yellow;
 }
 
 .persona {
-    width: 33.3%;
-    margin: 5px;
+    width: 5em;
+    flex: 0 1 20em;
+    padding: 5px;
+}
+
+@media screen and (min-width: 769px) {
+    main p {
+        font-size: 1em;
+    }
 }
