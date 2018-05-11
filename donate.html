@@ -45,7 +45,7 @@
                 <h2>How much will you be donating?</h2>
                 <h3>(Minimum is one dollar)</h3>
                 <label for="donateAmount">Donation Amount*: </label>
-                    <input type="number" name="donateAmount" id="donateAmount" min="1" step="0.01" required />
+                    <input type="number" name="donateAmount" id="donateAmount" min="1" step="0.01" required  value="1"/>
             </fieldset>
             <fieldset id="custInfo">
                 <h2>Payment Info</h2>
@@ -113,17 +113,17 @@
                             <option value="Wyoming (WY)" />
                     </datalist>
                 <label for="custZip">Zip Code*: </label>
-                    <input type="text" name="custZip" id="custZip" required pattern="^\d{5}$" /><br/>
+                    <input type="text" name="custZip" id="custZip" required pattern="^\d{5}$" placeholder="#####"/><br/>
                 <label for="custNum">Phone Number: </label>
-                    <input type="tel" name="custNum" id="custNum" /><br/>
+                    <input type="tel" name="custNum" id="custNum" placeholder="###-###-####" pattern="\d{3}-\d{3}-\d{4}"/><br/>
                 <label for="custEmail">Email*: </label>
-                    <input type="email" name="custEmail" id="custEmail" required /><br/>
+                    <input type="email" name="custEmail" id="custEmail" required pattern="^.+@.+\..+$" placeholder="email@domain.com"/><br/>
                 <label for="custEmail2">Re-enter Email*: </label>
-                    <input type="email" name="custEmail2" id="custEmail2" required /><br/>
+                    <input type="email" name="custEmail2" id="custEmail2" required pattern="^.+@.+\..+$" placeholder="email@domain.com"/><br/>
                 <label for="custComment">Comment: </label><br/>
                     <textarea name="custComment" id="custComment" rows="5" cols="35"></textarea>
             </fieldset>
-            <input type="submit" id="subContinue" value="Continue" />
+            <input type="submit" id="continueBtn" value="Continue" />
         </form>
         </article>
     </main>
@@ -149,5 +149,6 @@
     </footer>
     <script src="scripts/sticky.js"></script>
     <script src="scripts/nav_menu.js"></script>
+    <script src="scripts/donate.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@ $(window).resize(function() {
         }
 });
 
-window.onscroll = function() {checkForStick();};
+window.onscroll = checkForStick;
 
 function checkForStick() {
     if (window.pageYOffset >= sticky) {
