@@ -8,6 +8,31 @@ about.css
 
 */
 
+main {
+    margin: 10px 15px;
+}
+
 main h1 {
     font-size: 3em;
+}
+
+.migos {
+    display: flex;
+}
+
+.migos h2 {
+    font-size: 2.2em;
+    margin: 10px 15px;
+    text-align: center
+}
+
+.migos img {
+    height: 15em;
+    display: block;
+    margin: 0 auto;
+}
+
+.persona {
+    width: 33.3%;
+    margin: 5px;
 }
