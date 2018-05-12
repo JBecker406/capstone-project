@@ -24,7 +24,7 @@ label {
     font-size: 1.1em;
 }
 
-fieldset {
+fieldset:not(#cardComps) {
     border: 0.2em dashed rgba(55, 55, 55, 0.50);
     padding: 1em;
 }
@@ -35,4 +35,54 @@ fieldset {
 
 textarea {
     resize: vertical;
+}
+
+input[type=submit] {
+    font-size: 3em;
+}
+
+#prevLbl {
+    text-indent: 15%;
+    margin-bottom: 0.5em;
+}
+
+#prevInfo {
+    box-sizing: border-box;
+    background-color: rgba(237, 237, 237, 0.75);
+    width: 70%;
+    min-width: 20em;
+    margin: auto;
+    border-radius: 1em;
+    padding: 1em;
+    line-height: 1.5em;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 1.5em;
+}
+
+#prevInfo ul {
+    width: 45%;
+    min-width: 15em;
+}
+
+#prevInfo li {
+    font-size: 1.25em;
+    color: rgb(75, 75, 75);
+    white-space: nowrap;
+}
+
+#prevInfo span {
+    font-size: 0.9em;
+    color: rgb(0, 0, 0);
+}
+
+#creditInfo {
+    line-height: 2.25em;
+}
+
+#cardComps {
+    display: inline-block;
 }
