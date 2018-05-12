@@ -31,8 +31,78 @@ div#fontImg {
   top: 25%;
 }
 
-.product {
-  background: red;
-  width: 175px;
-  height: 175px;
+div.textIB {
+  background-color: white;
+  width: 100%;
+  height: 150px;
+  padding: 15px 0px;
+}
+
+.textIB h1 {
+  text-align: center;
+  font-size: 0.5em;
+  text-transform: uppercase;
+  margin: 15px;
+  padding: 15px;
+}
+
+.textIB p {
+  text-align: center;
+  font-size: 18px;
+  margin: 25px;
+}
+
+#product h1 {
+  position: absolute;
+}
+
+div#product {
+  display: block;
+  background-color: red;
+  text-align: center;
+  width: 100%;
+  height: 550px;
+}
+
+div#product img#main {
+  background-image: url(../images/service_pic1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: blue;
+  float: left;
+  width: 40%;
+  height: 100%;
+  z-index: 2
+}
+
+div#product img#sub1 {
+  background-image: url(../images/service_pic2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: green;
+  float: left;
+  width: 60%;
+  height: 50%;
+  z-index: 2
+}
+
+div#product img#sub2 {
+  background-image: url(../images/service_pic3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: lime;
+  float: left;
+  width: 60%;
+  height: 50%;
+  z-index: 2;
+}
+
+img {
+  z-index: 1;
+}
+
+p.p {
+  display: block;
+  position: absolute;
+  z-index: 2;
 }
