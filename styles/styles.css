@@ -17,6 +17,11 @@ body {
     font-family: 'Frank Ruhl Libre', 'Times New Roman', Times, serif;
 }
 
+#logo {
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
 #compName {
     box-sizing: border-box;
     font-family: 'Berkshire Swash', "Brush Script MT", cursive;
