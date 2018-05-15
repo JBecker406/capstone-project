@@ -169,6 +169,10 @@ footer a:hover {
     background-color: rgb(255, 255, 255);
 }
 
+footer address {
+    font-style: italic;
+}
+
 @media screen and (max-width: 480px) {
     #banner {
         display: flex;
@@ -308,14 +312,20 @@ footer a:hover {
     footer {
         flex-flow: row nowrap;
         -webkit-flex-flow: row nowrap;
+        padding: 1em;
     }
 
     #footSocial {
         width: 33%;
     }
 
+    #footSocial ul {
+        padding-top: 1em;
+    }
+
     #footContact {
         width: 67%;
+        text-align: right;
     }
 }
 

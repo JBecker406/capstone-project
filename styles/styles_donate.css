@@ -86,3 +86,31 @@ input[type=submit] {
 #cardComps {
     display: inline-block;
 }
+
+#donationEnd {
+    min-height: 40em;
+}
+
+#thanks {
+    margin-top: 0.5em;
+    font-size: 4em;
+    color: rgb(42, 159, 160);
+}
+
+#thanks + p {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+#dove {
+    width: 20%;
+    min-width: 10em;
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    filter: drop-shadow(4px 7px white) invert(100%);
+    -webkit-filter: drop-shadow(4px 7px white) invert(100%);
+}

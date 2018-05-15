@@ -29,6 +29,7 @@ function validateForm() {
     validateComp();
     validateNumber();
     validateExp();
+    validateCVC();
 }
 
 function validateName() {
@@ -92,5 +93,20 @@ function validateExp() {
     var exp = $("#cardExp")[0];
     if (exp.validity.valueMissing) {
         exp.setCustomValidity("Please enter an expiration date")
+    } else if (exp.validity.patternMismatch) {
+        exp.setCustomValidity("Please enter the correct form")
+    } else {
+        exp.setCustomValidity("");
+    }
+}
+
+function validateCVC() {
+    var cvc = $("#cardCVC")[0];
+    if (cvc.validity.valueMissing) {
+        cvc.setCustomValidity("Please enter a CVC number");
+    } else if (cvc.validity.patternMismatch) {
+        cvc.setCustomValidity("Please enter a correct CVC");
+    } else {
+        cvc.setCustomValidity("");
     }
 }
