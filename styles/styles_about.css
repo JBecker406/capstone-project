@@ -8,12 +8,14 @@ about.css
 
 */
 
-main {
-    margin: 10px 15px;
-}
-
 main h1 {
     font-size: 3em;
+    padding-bottom: 0.5em;
+}
+
+em {
+    font-style: italic;
+    font-size: 1.1em;
 }
 
 .migos {
@@ -23,6 +25,7 @@ main h1 {
     -webkit-flex-flow: row wrap;
     justify-content: space-evenly;
     -webkit-justify-content: space-evenly;
+    margin: 3em 0;
 }
 
 .migos h2 {
@@ -46,8 +49,7 @@ main h1 {
     padding: 5px;
 }
 
-@media screen and (min-width: 769px) {
-    main p {
-        font-size: 1em;
-    }
+main p {
+    font-size: 1.25em;
+    line-height: 1.25em;
 }

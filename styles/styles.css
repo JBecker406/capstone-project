@@ -239,6 +239,8 @@ footer address {
     #footContact a {
         display: block;
         background-color: rgb(242, 198, 38);
+        padding: 0.5em 0;
+        text-align: center;
     }
 
     #footContact a:hover {
