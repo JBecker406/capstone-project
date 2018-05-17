@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+article {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-evenly;
+    -webkit-justify-content: space-evenly;
+}
+
+#resInfo {
+    width: 50%;
+    min-width: 320px;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    line-height: 1.25em;
+}
+
+#solarHouse {
+    min-width: 320px;
+    width: 40%;
+}

@@ -153,8 +153,8 @@ footer a:hover {
 }
 
 .socialIcon {
-    width: 2em;
-    height: 2em;
+    width: 3em;
+    height: 3em;
 }
 
 #twitterIcon {
@@ -234,6 +234,10 @@ footer address {
         flex-flow: column nowrap;
         -webkit-flex-flow: column nowrap;
         line-height: 1.5em;
+    }
+
+    .socialIcon {
+        margin: 1em;
     }
 
     #footContact a {
