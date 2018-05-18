@@ -1,3 +1,4 @@
+// jQuery variables
 var $dAmount = $("#donateAmount");
 var $fName = $("#custFirstName");
 var $lName = $("#custLastName");
@@ -11,10 +12,12 @@ var $email2 = $("#custEmail2");
 var $comment = $("#custComment");
 var $continue = $("#continueBtn");
 
+// Sets event listener when document loads
 $(document).ready(function() {
     $continue.on("click", validateForm);
 });
 
+// Validates form input
 function validateForm() {
     validateAmount();
     validateFName();

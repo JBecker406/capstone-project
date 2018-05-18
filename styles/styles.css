@@ -1,9 +1,11 @@
 @charset "UTF-8";
+/* Imports fonts */
 @import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre');
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 
-/* Main styles for pages */
+/* Main styles for all pages */
 
+/* Html and body styles */
 html {
     background: linear-gradient(rgb(31, 151, 214), rgb(75, 228, 236));
 }
@@ -17,6 +19,7 @@ body {
     font-family: 'Frank Ruhl Libre', 'Times New Roman', Times, serif;
 }
 
+/* Header styles */
 #logo {
     padding: 0.5em;
     box-sizing: border-box;
@@ -52,6 +55,7 @@ body {
     color: rgb(70, 70, 70);
 }
 
+/* Navigation styles */
 #navArrow {
     width: 100%;
     display: none;
@@ -114,15 +118,18 @@ nav.sticky {
     text-indent: 2em;
 }
 
+/* Main styles */
 main {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
 }
 
+/* Article styles */
 article {
     padding: 0 1em;
 }
 
+/* Footer styles */
 footer {
     background-color: rgb(238, 184, 19);
     display: -webkit-flex;
@@ -173,7 +180,9 @@ footer address {
     font-style: italic;
 }
 
+/* Styles for mobile only */
 @media screen and (max-width: 480px) {
+    /* Header styles */
     #banner {
         display: flex;
         display: -webkit-flex;
@@ -196,6 +205,8 @@ footer address {
         margin-left: auto;
         width: 5em;
     }
+
+    /* Navigation styles */
     #navArrow {
         display: block;
     }
@@ -230,6 +241,8 @@ footer address {
     #currentMenu {
         display: block;
     }
+
+    /* Footer styles */
     footer {
         flex-flow: column nowrap;
         -webkit-flex-flow: column nowrap;
@@ -252,7 +265,9 @@ footer address {
     }
 }
 
+/* Styles for tablet and desktop */
 @media screen and (min-width: 481px) {
+    /* Header styles */
     #banner {
         display: flex;
         display: -webkit-flex;
@@ -277,6 +292,8 @@ footer address {
         font-size: 1em;
         width: 4em;
     }
+
+    /* Navigation styles */
     header.sticky+main {
         margin-top: 2em;
     }
@@ -315,6 +332,8 @@ footer address {
         position: absolute;
         z-index: 1;
     }
+
+    /* Footer styles */
     footer {
         flex-flow: row nowrap;
         -webkit-flex-flow: row nowrap;
@@ -335,7 +354,9 @@ footer address {
     }
 }
 
+/* Styles for desktop only */
 @media screen and (min-width: 769px) {
+    /* Header styles */
     #banner {
         justify-content: space-between;
     }

@@ -1,3 +1,4 @@
+// Variables retrieved using session storage
 var dAmount = sessionStorage.getItem("dAmount");
 var fName = sessionStorage.getItem("fName");
 var lName = sessionStorage.getItem("lName");
@@ -9,6 +10,7 @@ var pNum = sessionStorage.getItem("pNum");
 var email = sessionStorage.getItem("email");
 var custInfo = ["$"+dAmount, fName+" "+lName, address, city, state, zip, pNum, email];
 
+// Sets content of prev info box using session storage
 $(document).ready( function() {
     for (var i = 0; i < custInfo.length; i++) {
         if (i !== 6) {
@@ -24,6 +26,7 @@ $(document).ready( function() {
     $("input[type=submit]").on("click", validateForm);
 });
 
+// Validates credit card form
 function validateForm() {
     validateName();
     validateComp();

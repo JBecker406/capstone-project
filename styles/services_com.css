@@ -1,12 +1,15 @@
+@charset "UTF-8";
+
 /*
 Author: Chris Garcia
 
 Date: 5.7.18
 
-service_com.css
+Styles for commercial services page
 
 */
 
+/* Main styles */
 main {
   margin: 10px 15px;
 }
@@ -15,6 +18,7 @@ main h1, main div {
   font-size: 3em;
 }
 
+/* Image styles */
 div#fontImg {
   width: 100%;
   height: 400px;
@@ -25,10 +29,10 @@ div#fontImg {
 }
 
 #fontImg h1 {
-  font-size: 3em;
+  width: 100%;
   position: relative;
-  left: 24.5%;
-  top: 25%;
+  text-align: center;
+    line-height: 400px;
 }
 
 div.textIB {
@@ -105,4 +109,25 @@ p.p {
   display: block;
   position: absolute;
   z-index: 2;
+}
+
+/* Styles for mobile only */
+@media screen and (max-width: 480px) {
+    #fontImg h1 {
+        font-size: 1.5em;
+    }
+}
+
+/* Styles for tablet and desktop */
+@media screen and (min-width: 481px) {
+    #fontImg h1 {
+        font-size: 2em;
+    }
+}
+
+/* Styles for desktop only */
+@media screen and (min-width: 769px) {
+    #fontImg h1 {
+        font-size: 3em;
+    }
 }

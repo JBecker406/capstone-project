@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/* Styles for contact page */
+
+/* Article styles */
 article {
     display: flex;
     display: -webkit-flex;
@@ -8,6 +11,7 @@ article {
     justify-content: center;
 }
 
+/* Location info styles */
 #location {
     display: flex;
     display: -webkit-flex;
@@ -37,7 +41,9 @@ article {
     object-fit: cover;
 }
 
+/* Styles for mobile only */
 @media screen and (max-width: 480px) {
+    /* Location info styles */
     #location a {
         display: block;
         text-align: center;
@@ -57,7 +63,9 @@ article {
     }
 }
 
+/* Styles for tablet and desktop */
 @media screen and (min-width: 481px) {
+    /* Location info styles */
     #location a {
         color: rgb(87, 21, 217);
     }

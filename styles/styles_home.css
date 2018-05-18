@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/* Styles for home page */
+
+/* Carousel styles */
 #carousel {
     width: 100%;
     max-width: 1024px;
@@ -7,6 +10,7 @@
     margin: auto;
 }
 
+/* Animation for fade */
 @-webkit-keyframes fade {
     from {opacity: 0.6}
     to {opacity: 1}
@@ -17,6 +21,7 @@
     to {opacity: 1}
 }
 
+/* Carousel slide styles */
 .cFade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -106,6 +111,7 @@
     box-shadow: 0px 0px 10px rgb(250, 250, 55);
 }
 
+/* Main content styles */
 main h1 {
     font-size: 4em;
     text-decoration: underline;
@@ -119,7 +125,9 @@ main p {
     line-height: 1.25em;
 }
 
+/* Styles for mobile only */
 @media screen and (max-width: 480px) {
+    /* Carousel styles */
     #carousel {
         height: 20em;
     }
@@ -129,7 +137,9 @@ main p {
     }
 }
 
+/* Styles for tablet and desktop */
 @media screen and (min-width: 481px) {
+    /* Carousel styles */
     #carousel {
         height: 25em;
     }
@@ -146,8 +156,4 @@ main p {
     #cProgress {
         display: block;
     }
-}
-
-@media screen and (min-width: 769px) {
-
 }

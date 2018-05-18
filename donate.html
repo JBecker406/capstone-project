@@ -11,6 +11,7 @@
     <title>Solem Avium | Donate</title>
 </head>
 <body>
+    <!-- Banner and nav for site -->
     <header>
         <div id="banner">
             <img src="images/solem_avium.png" alt="Solem Avium Logo" id="logo" />
@@ -36,17 +37,26 @@
             </ul>
         </nav>
     </header>
+    <!-- End of banner and nav-->
+
     <main>
         <article>
+            <!-- Form title -->
         <h1>Donate to help provide clean energy to others</h1>
+            <!-- Form for donation -->
         <form id="donateForm" name="donateForm" method="post" action="donate2.html">
             <h3>Fields with an * are required.</h3>
+
+            <!-- Donation amount fieldset -->
             <fieldset id="donateMoney">
                 <h2>How much will you be donating?</h2>
                 <h3>(Minimum is one dollar)</h3>
                 <label for="donateAmount">Donation Amount*: </label>
                     <input type="number" name="donateAmount" id="donateAmount" min="1" step="0.01" required  value="1"/>
             </fieldset>
+            <!-- End of fieldset -->
+
+            <!-- Customer info fieldset -->
             <fieldset id="custInfo">
                 <h2>Payment Info</h2>
                 <label for="custFirstName">First name*: </label><br/>
@@ -123,10 +133,16 @@
                 <label for="custComment">Comment: </label><br/>
                     <textarea name="custComment" id="custComment" rows="5" cols="30"></textarea>
             </fieldset>
+            <!-- End of fieldset -->
+
             <input type="submit" id="continueBtn" value="Continue" />
         </form>
+        <!-- End of form -->
+        
         </article>
     </main>
+
+    <!-- Footer for social media and contact info -->
     <footer>
         <div id="footSocial">
             <h1>Social Media:</h1>
@@ -152,6 +168,9 @@
             </ul>
         </div>
     </footer>
+    <!-- End of footer -->
+
+    <!-- Scripts -->
     <script src="scripts/sticky.js"></script>
     <script src="scripts/nav_menu.js"></script>
     <script src="scripts/donate.js"></script>

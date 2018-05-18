@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/* Styles for residential services page */
+
+/* Article styles */
 article {
     display: flex;
     display: -webkit-flex;
@@ -9,6 +12,7 @@ article {
     -webkit-justify-content: space-evenly;
 }
 
+/* Residential info styles */
 #resInfo {
     width: 50%;
     min-width: 320px;
@@ -17,6 +21,7 @@ article {
     line-height: 1.25em;
 }
 
+/* Image styles */
 #solarHouse {
     min-width: 320px;
     width: 40%;

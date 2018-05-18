@@ -1,13 +1,16 @@
+@charset "UTF-8";
+
 /*
 
 Author: Peter Tran
 
 Date: 5.7.18
 
-about.css
+Styles for about page
 
 */
 
+/* h1 and em styles */
 main h1 {
     font-size: 3em;
     padding-bottom: 0.5em;
@@ -18,6 +21,7 @@ em {
     font-size: 1.1em;
 }
 
+/* Founders info styles */
 .migos {
     display: flex;
     display: -webkit-flex;
@@ -49,6 +53,7 @@ em {
     padding: 5px;
 }
 
+/* Paragraph styles */
 main p {
     font-size: 1.25em;
     line-height: 1.25em;
